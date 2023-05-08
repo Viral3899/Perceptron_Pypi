@@ -29,7 +29,7 @@ def get_requirements():
 
 setuptools.setup(
     name=f"{PKG_NAME}-{USER_NAME}",
-    version="0.0.2",
+    version="0.0.3",
     author=USER_NAME,
     author_email="viralsherarthiya1008@gmail.com",
     description="A package for perceptron",
