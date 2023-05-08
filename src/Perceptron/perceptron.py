@@ -8,7 +8,7 @@ import seaborn as sns
 from matplotlib.colors import ListedColormap
 plt.style.use("fivethirtyeight")
 
-from src.logger import logger
+from logger import logger
 
 
 class Perceptron:
