@@ -11,6 +11,7 @@ AUTHOR_NAME = 'Viral Sherathiya'
 AUTHOR_EMAIL = 'viralsherathiay1008@gmail.com'
 HYPHEN_E_DOT = '-e .'
 
+
 def get_requirements():
     """
     This Function returns the list of Requirements from requirements.txt & all the Packages.
@@ -24,6 +25,7 @@ def get_requirements():
             requirements.remove(HYPHEN_E_DOT)
 
     return requirements
+
 
 setuptools.setup(
     name=f"{PKG_NAME}-{USER_NAME}",
@@ -45,5 +47,7 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
-    install_requires=get_requirements()
+    install_requires=['matplotlib==3.5.3', 'seaborn==0.12.2',
+                      'pandas==1.3.5', 'numpy==1.21.6',
+                      'joblib==1.2.0', 'ipykernel==6.16.2']
 )
