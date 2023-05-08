@@ -51,5 +51,5 @@ setuptools.setup(
     # get_requirements()
     ['matplotlib==3.5.3', 'seaborn==0.12.2',
                       'pandas==1.3.5', 'numpy==1.21.6',
-                      'joblib==1.2.0', 'ipykernel==6.16.2','-e .']
+                      'joblib==1.2.0', 'ipykernel==6.16.2']
 )
