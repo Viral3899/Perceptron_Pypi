@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 PKG_NAME = "Perceptrone"
 USER_NAME = "viral3899"
 PROJECT_NAME = "Perceptron_PyPi"
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 AUTHOR_NAME = 'Viral Sherathiya'
 AUTHOR_EMAIL = 'viralsherathiay1008@gmail.com'
 HYPHEN_E_DOT = '-e .'
@@ -47,8 +47,9 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
-    install_requires=get_requirements()
-    # ['matplotlib==3.5.3', 'seaborn==0.12.2',
-    #                   'pandas==1.3.5', 'numpy==1.21.6',
-    #                   'joblib==1.2.0', 'ipykernel==6.16.2']
+    install_requires=
+    # get_requirements()
+    ['matplotlib==3.5.3', 'seaborn==0.12.2',
+                      'pandas==1.3.5', 'numpy==1.21.6',
+                      'joblib==1.2.0', 'ipykernel==6.16.2','-e .']
 )
